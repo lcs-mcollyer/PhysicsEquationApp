@@ -11,7 +11,7 @@
 		F856C1972762972B008948BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F856C1962762972B008948BF /* ContentView.swift */; };
 		F856C19927629731008948BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F856C19827629731008948BF /* Assets.xcassets */; };
 		F856C19C27629731008948BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F856C19B27629731008948BF /* Preview Assets.xcassets */; };
-		F856C1A327629DE3008948BF /* OutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F856C1A227629DE2008948BF /* OutputView.swift */; };
+		F856C1A327629DE3008948BF /* OutputViewValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F856C1A227629DE2008948BF /* OutputViewValue.swift */; };
 		F856C1A52762A154008948BF /* SectionLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F856C1A42762A149008948BF /* SectionLabelView.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,7 +21,7 @@
 		F856C1962762972B008948BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F856C19827629731008948BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F856C19B27629731008948BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F856C1A227629DE2008948BF /* OutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputView.swift; sourceTree = "<group>"; };
+		F856C1A227629DE2008948BF /* OutputViewValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputViewValue.swift; sourceTree = "<group>"; };
 		F856C1A42762A149008948BF /* SectionLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionLabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				F856C1942762972B008948BF /* PhysicsEquationAppApp.swift */,
-				F856C1A227629DE2008948BF /* OutputView.swift */,
+				F856C1A227629DE2008948BF /* OutputViewValue.swift */,
 				F856C1962762972B008948BF /* ContentView.swift */,
 				F856C1A42762A149008948BF /* SectionLabelView.swift */,
 				F856C19827629731008948BF /* Assets.xcassets */,
@@ -146,7 +146,7 @@
 				F856C1972762972B008948BF /* ContentView.swift in Sources */,
 				F856C1A52762A154008948BF /* SectionLabelView.swift in Sources */,
 				F856C1952762972B008948BF /* PhysicsEquationAppApp.swift in Sources */,
-				F856C1A327629DE3008948BF /* OutputView.swift in Sources */,
+				F856C1A327629DE3008948BF /* OutputViewValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

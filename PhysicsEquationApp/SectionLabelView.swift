@@ -15,15 +15,15 @@ struct SectionLabelView: View {
     // MARK: Computed properties
     var body: some View {
         HStack {
-
+            
             Text(text)
                 .font(.title2)
                 .bold()
-
             
-
+            
+            
             Spacer()
-
+            
         }
     }
 }
@@ -31,6 +31,6 @@ struct SectionLabelView: View {
 struct SectionLabelView_Previews: PreviewProvider {
     static var previews: some View {
         SectionLabelView(text: "Radius"
-                         )
+        )
     }
 }

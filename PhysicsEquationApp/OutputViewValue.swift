@@ -34,7 +34,7 @@ struct OutputValueView: View {
 
 struct OutputValueView_Previews: PreviewProvider {
     static var previews: some View {
-        
-      
+        OutputValueView(value: 10.0,
+                        suffix: "Newtons")
     }
 }

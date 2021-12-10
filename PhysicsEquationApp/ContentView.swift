@@ -15,9 +15,7 @@ struct ContentView: View {
     @State var providedAcceleration = ""
     // MARK: Computed properties
     
-    var fnet = Double{
-        return mass * acceleration
-    }
+  
     
     var mass: Double?{
         
@@ -27,7 +25,9 @@ struct ContentView: View {
             return nil
             
         }
+        return mass
     }
+    
     
     
     var acceleration: Double?{
@@ -38,40 +38,51 @@ struct ContentView: View {
         else {
             return nil
         }
-        
-        
-        
-        
-        var body: some View {
-            ScrollView {
-                
-                
-                // Input: Mass
-                TextField("Mass",
-                          text: $providedMass,
-                          prompt: Text("Numeric value greater than 0"))
-                
-                
-                    .foregroundColor(mass == nil ? Color.blue :  Color.primary)
-                
-                
-                SectionLabelView(text: "Acceleration")
-                
-                OutputValueView(value: fnet, suffix: "square units")
-                
-            }
-            .navigationTitle("Fnet")
-            .padding()
+        return acceleration
+    }
+    
+    var fnet : Double?{
+        guard let fnet = fnet
+        else {
+            nil
         }
         
+        
+        return mass * acceleration
     }
     
     
-    struct CircleView_Previews: PreviewProvider {
-        static var previews: some View {
-            NavigationView {
-                ContentView()
-            }
+    var body: some View {
+        ScrollView {
+            
+            
+            // Input: Mass
+            TextField("Mass",
+                      text: $providedMass,
+                      prompt: Text("Numeric value greater than 0"))
+            
+            
+                .foregroundColor(mass == nil ? Color.blue :  Color.primary)
+            
+            
+            SectionLabelView(text: "Acceleration")
+            
+            OutputValueView(value: fnet, suffix: "square units")
+            
         }
+        .navigationTitle("Fnet")
+        .padding()
     }
     
+}
+
+
+struct CircleView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            ContentView()
+            
+        }
+    }
+}
+
